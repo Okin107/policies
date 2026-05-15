@@ -15,7 +15,7 @@ The Application does not collect your precise location, email address, phone num
 
 **In-App Purchases**
 
-The Application offers optional in-app purchases (hero skins) processed entirely through Apple's App Store. The Service Provider does not collect, store, or have access to your payment information, credit card details, or Apple ID. All payment processing is handled by Apple in accordance with their privacy policy.
+The Application offers optional in-app purchases (hero skins) processed entirely through Apple's App Store or Google Play Store, depending on your platform. The Service Provider does not collect, store, or have access to your payment information, credit card details, or account credentials. All payment processing is handled by Apple or Google in accordance with their respective privacy policies.
 
 **Third Party Access**
 
@@ -23,7 +23,8 @@ Only aggregated, anonymized data is periodically transmitted to external service
 
 The Application utilises the following third-party services:
 
-*   [Apple App Store](https://www.apple.com/legal/privacy/) — for app distribution and in-app purchase processing
+*   [Apple App Store](https://www.apple.com/legal/privacy/) — for app distribution and in-app purchase processing (iOS)
+*   [Google Play Store](https://policies.google.com/privacy) — for app distribution and in-app purchase processing (Android)
 *   [MongoDB Atlas](https://www.mongodb.com/legal/privacy-policy) — for cloud data storage
 *   [Render](https://render.com/privacy) — for hosting the backend API
 
