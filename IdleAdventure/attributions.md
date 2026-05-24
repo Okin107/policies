@@ -64,6 +64,7 @@ This game uses icons from [Flaticon](https://www.flaticon.com). Below are the at
 - <a href="https://www.flaticon.com/free-icons/cloak" title="CLOAK icons">CLOAK icons created by Freepik - Flaticon</a>
 - <a href="https://www.flaticon.com/free-icons/scroll" title="scroll icons">Scroll icons created by Freepik - Flaticon</a>
 - <a href="https://www.flaticon.com/free-icons/hourglass" title="hourglass icons">Hourglass icons created by Freepik - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/shoemaking" title="shoemaking icons">Shoemaking icons created by andinur - Flaticon</a>
 
 ## Gear Tab
 
