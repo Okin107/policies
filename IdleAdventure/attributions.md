@@ -28,6 +28,7 @@ This game uses icons from [Flaticon](https://www.flaticon.com). Below are the at
 - <a href="https://www.flaticon.com/free-icons/art-and-design" title="art and design icons">Art and design icons created by Freepik - Flaticon</a>
 - <a href="https://www.flaticon.com/free-icons/circle" title="circle icons">Circle icons created by Alfredo Hernandez - Flaticon</a>
 - <a href="https://www.flaticon.com/free-icons/circular" title="circular icons">Circular icons created by riajulislam - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/purple" title="purple icons">Purple icons created by Nsit - Flaticon</a>
 
 ## Companion Tab
 
