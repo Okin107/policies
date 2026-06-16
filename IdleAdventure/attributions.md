@@ -17,6 +17,7 @@ This game uses icons from [Flaticon](https://www.flaticon.com). Below are the at
 - <a href="https://www.flaticon.com/free-icons/bow" title="bow icons">Bow icons created by Freepik - Flaticon</a>
 - <a href="https://www.flaticon.com/free-icons/witchcraft" title="witchcraft icons">Witchcraft icons created by Smashicons - Flaticon</a>
 - <a href="https://www.flaticon.com/free-icons/vortex" title="vortex icons">Vortex icons created by Freepik - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/goal" title="goal icons">Goal icons created by Freepik - Flaticon</a>
 
 ## Hero Tab
 
