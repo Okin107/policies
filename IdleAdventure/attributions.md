@@ -37,6 +37,7 @@ This game uses icons from [Flaticon](https://www.flaticon.com). Below are the at
 - <a href="https://www.flaticon.com/free-icons/synergy" title="synergy icons">Synergy icons created by herikus - Flaticon</a>
 - <a href="https://www.flaticon.com/free-icons/team" title="team icons">Team icons created by Freepik - Flaticon</a>
 - <a href="https://www.flaticon.com/free-icons/tavern" title="tavern icons">Tavern icons created by Smashicons - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/paw" title="paw icons">Paw icons created by meaicon - Flaticon</a>
 
 ## Artifact Tab
 
