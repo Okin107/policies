@@ -122,6 +122,7 @@ This game uses icons from [Flaticon](https://www.flaticon.com). Below are the at
 - <a href="https://www.flaticon.com/free-icons/rectangle" title="rectangle icons">Rectangle icons created by pocike - Flaticon</a>
 - <a href="https://www.flaticon.com/free-icons/copy-trade" title="copy trade icons">Copy trade icons created by bouzix - Flaticon</a>
 - <a href="https://www.flaticon.com/free-icons/info" title="info icons">Info icons created by Freepik - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by Hilmy Abiyyu A. - Flaticon</a>
 
 ## Bottom Navigation
 
