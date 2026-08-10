@@ -157,6 +157,7 @@ This game uses icons from [Flaticon](https://www.flaticon.com). Below are the at
 - <a href="https://www.flaticon.com/free-icons/armor" title="armor icons">Armor icons created by kliwir art - Flaticon</a>
 - <a href="https://www.flaticon.com/free-icons/achievement" title="achievement icons">Achievement icons created by popcornarts - Flaticon</a>
 - <a href="https://www.flaticon.com/free-icons/gold-medal" title="gold medal icons">Gold medal icons created by Freepik - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/laurel" title="laurel icons">Laurel icons created by Magnific - Flaticon</a>
 
 ## Badge Tiers
 
