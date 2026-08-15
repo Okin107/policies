@@ -107,6 +107,7 @@ This game uses icons from [Flaticon](https://www.flaticon.com). Below are the at
 - <a href="https://www.flaticon.com/free-icons/warrior" title="warrior icons">Warrior icons created by Freepik - Flaticon</a>
 - <a href="https://www.flaticon.com/free-icons/fraud" title="fraud icons">Fraud icons created by Freepik - Flaticon</a>
 - <a href="https://www.flaticon.com/free-icons/skull" title="skull icons">Skull icons created by Heykiyou - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/gift" title="gift icons">Gift icons created by kliwir art - Flaticon</a>
 
 ## Tavern Panel
 
