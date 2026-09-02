@@ -1,0 +1,5 @@
+# Idle Adventure: Champions of Realms — Attributions
+
+## General
+
+- <a href="https://www.flaticon.com/free-icons/skull" title="skull icons">Skull icons created by Freepik - Flaticon</a>
