@@ -10,7 +10,8 @@ The Application collects the following information when you use it:
 *   **Sign-in information:** If you choose to sign in with Google or Apple, the Application receives a unique account identifier from that provider, which links your save to your account. Depending on what you allow on the provider's sign-in screen, this may include the email address and name on that account. If you use Apple's "Hide My Email", only the relay address Apple gives us is received. The Application never sees or stores your Google or Apple password.
 *   **Game progress:** Your gameplay data (including your cards, card levels, gear, currencies, campaign and mode progress, quests, mail, settings and other in-game state) is stored locally on your device and synced to our servers for cloud save.
 *   **Leaderboards, Arena and Guilds:** Your player name, portrait, player level, deck power and progress may be shown publicly on in-game leaderboards and to other players in the Arena and in guilds. If you join a guild, your membership and guild activity are shared with the other members.
-*   **Device information:** The Application collects your device model, operating system and version, screen resolution, and language/locale. This helps the Service Provider understand what devices players use and fix problems.
+*   **Device information:** The Application collects your device model, operating system and version, and language/locale. This helps the Service Provider understand what devices players use and fix problems.
+*   **Device and sign-in history:** Each time the Application connects, our servers record which device it is (the device identifier your operating system provides to apps, plus the device information above), when it was first and last seen, and a hashed form of the IP address it connected from. Only a keyed hash of the IP address is stored, never the address itself. Our servers also record account events: when the account was created, when a Google or Apple sign-in was linked, and when a device moved from one account to another by signing in. This is used to keep accounts secure, to help you recover your account, and to detect cheating, abuse and multiple accounts used to get around the game's rules. It is never used for advertising and is never shared.
 *   **Purchase records:** When you make an in-app purchase, the Application stores a record of what was bought and the store's transaction reference, so the item can be delivered to your account and restored if needed.
 
 The Application does not collect your precise location, phone number, contacts, photos or any other personal content from your device.
@@ -48,7 +49,25 @@ You can delete your account and all of its data at any time from inside the Appl
 
 **Data Retention Policy**
 
-The Service Provider will retain your data for as long as you use the Application and for a reasonable time thereafter. When you delete your account, everything associated with it is removed from our servers and replaced on your device by a new, empty profile. If you'd like the Service Provider to delete your data another way, please contact them at nikogoga87@gmail.com and they will respond in a reasonable time.
+The Service Provider keeps your data for these periods:
+
+*   **Player profile, game progress, sign-in link (including any email address received from Google or Apple) and purchase records:** for as long as your account exists.
+*   **Device and sign-in history** (device identifier, device information, hashed IP addresses, account events): each device record is deleted automatically **12 months after that device was last used** with your account, and each account event 12 months after it happened.
+*   **Server logs** of individual requests: a short time only, for fixing problems and keeping the service running.
+
+When you delete your account, everything associated with it, including its device and sign-in history, is removed from our servers straight away and replaced on your device by a new, empty profile. If you'd like the Service Provider to delete your data another way, please contact them at nikogoga87@gmail.com and they will respond in a reasonable time.
+
+**Legal Basis and Your Rights**
+
+If you are in the European Economic Area, the United Kingdom or Switzerland, the Service Provider processes your information:
+
+*   to provide the game you asked for: your account, save, cloud sync, purchases and sign-in (performance of a contract);
+*   for its legitimate interests in keeping accounts secure and the game fair: the device and sign-in history described above (legitimate interest);
+*   where the law requires it (legal obligation).
+
+You have the right to ask for a copy of your data, to have it corrected, to have it deleted, to receive it in a portable format, to restrict its processing and to object to processing based on legitimate interests. To use any of these rights, contact the Service Provider at nikogoga87@gmail.com with your player ID (copy it from **Settings → Account**). You also have the right to complain to your local data protection authority.
+
+Our servers and database are hosted in the European Union (Render and MongoDB Atlas, EU regions), and your data is stored there. Both providers are US companies; any access from outside the EU is covered by their data processing terms, which include the European Commission's Standard Contractual Clauses. Signing in with Google or Apple is handled by those companies under their own privacy policies.
 
 **Children**
 
@@ -58,7 +77,7 @@ The Application does not address anyone under the age of 13. The Service Provide
 
 **Security**
 
-The Service Provider is concerned about safeguarding the confidentiality of your information. The Service Provider provides physical, electronic, and procedural safeguards to protect information the Service Provider processes and maintains. Sign-in is handled by Google and Apple, so no passwords are stored by the Service Provider, and local save data is encrypted on device.
+The Service Provider is concerned about safeguarding the confidentiality of your information. The Service Provider provides physical, electronic, and procedural safeguards to protect information the Service Provider processes and maintains. Sign-in is handled by Google and Apple, so no passwords are stored by the Service Provider. Data travels between the Application and our servers over encrypted connections (HTTPS), and IP addresses are stored only as keyed hashes.
 
 **Changes**
 
