@@ -41,9 +41,8 @@
   .hero::before { content: ""; position: absolute; inset: 0; background: url("assets/splash.jpg") center 30% / cover no-repeat; transform: scale(1.04); }
   .hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(13,20,36,.55) 0%, rgba(13,20,36,.78) 55%, var(--bg) 100%); }
   .hero .wrap { position: relative; z-index: 1; text-align: center; padding-top: 64px; padding-bottom: 64px; }
-  .hero img.icon { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 10px 40px rgba(0,0,0,.55), 0 0 0 2px rgba(242,193,78,.35); }
-  .hero h1 { font-size: clamp(38px, 7vw, 72px); line-height: 1.02; margin: 22px 0 14px; text-shadow: 0 4px 24px rgba(0,0,0,.35); }
-  .hero h1 small { display: block; font-size: .5em; color: var(--text); -webkit-text-fill-color: var(--text); opacity: .9; margin-bottom: 6px; }
+  .hero h1.logo { margin: 0 auto 22px; max-width: 620px; }
+  .hero h1.logo img { display: block; width: 100%; height: auto; filter: drop-shadow(0 10px 28px rgba(0,0,0,.55)); }
   .hero .lede { max-width: 640px; margin: 0 auto; font-size: clamp(17px, 2.2vw, 20px); color: #dfe4ef; }
   .cta { display: inline-flex; align-items: center; gap: 10px; margin-top: 28px; padding: 14px 26px; border-radius: 14px; text-decoration: none;
     background: linear-gradient(180deg, #ffd978, var(--gold) 50%, var(--gold-deep)); color: #2a1a02; font-weight: 700; font-size: 17px;
@@ -106,8 +105,7 @@
 
 <header class="hero">
   <div class="wrap">
-    <img class="icon" src="assets/icon.png" alt="Idle Adventure: Champions of Realms icon">
-    <h1 class="display gold-text"><small class="display">Idle Adventure</small>Champions of Realms</h1>
+    <h1 class="logo"><img src="assets/logo.png" alt="Idle Adventure: Champions of Realms" width="1200" height="400"></h1>
     <p class="lede">The heroes of Idle Adventure are back, and this time they're cards in your hand. Draw them at the Deckhouse, level them up, fuse them into stronger versions and choose every target yourself. Or flip on Auto Play and let your deck handle it.</p>
     <a class="cta" href="https://play.google.com/store/apps/details?id=com.phmn.idleadventurechampions">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.6 1.8 13.8 12 3.6 22.2c-.4-.2-.6-.7-.6-1.2V3c0-.5.2-1 .6-1.2Zm11.6 11.6 2.4 2.4-11.2 6.4 8.8-8.8Zm3.9-3.4 2.6 1.5c.8.5.8 1.6 0 2.1L19.1 15l-2.7-2.7 2.7-2.3ZM6.4 1.8l11.2 6.4-2.4 2.4-8.8-8.8Z"/></svg>
