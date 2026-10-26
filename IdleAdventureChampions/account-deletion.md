@@ -17,12 +17,12 @@ You can also reach us on the [Discord server](https://discord.gg/G6ewzKfB9r).
 - All game progress and save data (cards, gear, currencies, progress, mail, settings)
 - Leaderboard and Arena entries
 - Guild membership
-- Purchase history records
 - Device information and device/sign-in history (device identifiers, hashed IP addresses, account events)
 
 ## What gets kept
 
-Nothing. All data associated with your account is permanently deleted.
+- **Purchase records**: what was bought, when, the price and the store's transaction number. We need them for our accounts and taxes and to handle refunds. They no longer carry your player ID or name, so they can't be linked back to you.
+- **An anonymous summary**: the days the account was made and deleted, the platform, game version, player level and how far you got. It has no player ID, name, email or device information.
 
 Purchases are processed by Apple or Google, so their own records of a payment are kept by them under their privacy policies, not by us. Deleting your account doesn't cancel or refund past purchases.
 

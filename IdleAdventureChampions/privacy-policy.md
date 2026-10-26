@@ -45,17 +45,18 @@ The Service Provider does not sell your information.
 
 You can stop all collection of information by the Application easily by uninstalling it. You may use the standard uninstall processes as may be available as part of your mobile device or via the mobile application marketplace.
 
-You can delete your account and all of its data at any time from inside the Application: **Settings → Account → Delete account**. See [Account & Data Deletion](account-deletion.md) for details and other ways to ask.
+You can delete your account and its data at any time from inside the Application: **Settings → Account → Delete account**. See [Account & Data Deletion](account-deletion.md) for details and other ways to ask.
 
 **Data Retention Policy**
 
 The Service Provider keeps your data for these periods:
 
-*   **Player profile, game progress, sign-in link (including any email address received from Google or Apple) and purchase records:** for as long as your account exists.
+*   **Player profile, game progress and sign-in link (including any email address received from Google or Apple):** for as long as your account exists.
+*   **Purchase records** (what was bought, when, the price and the store's transaction number): for as long as accounting and tax law requires us to keep them, also after you delete your account, but then without your player ID or name.
 *   **Device and sign-in history** (device identifier, device information, hashed IP addresses, account events): each device record is deleted automatically **12 months after that device was last used** with your account, and each account event 12 months after it happened.
 *   **Server logs** of individual requests: a short time only, for fixing problems and keeping the service running.
 
-When you delete your account, everything associated with it, including its device and sign-in history, is removed from our servers straight away and replaced on your device by a new, empty profile. If you'd like the Service Provider to delete your data another way, please contact them at nikogoga87@gmail.com and they will respond in a reasonable time.
+When you delete your account, everything associated with it, including its device and sign-in history, is removed from our servers straight away and replaced on your device by a new, empty profile. Only the purchase records and an anonymous summary (no player ID, name, email or device information) stay; see [Account & Data Deletion](account-deletion.md). If you'd like the Service Provider to delete your data another way, please contact them at nikogoga87@gmail.com and they will respond in a reasonable time.
 
 **Legal Basis and Your Rights**
 
