@@ -19,6 +19,8 @@ This game uses icons from [Flaticon](https://www.flaticon.com). Below are the at
 - <a href="https://www.flaticon.com/free-icons/vortex" title="vortex icons">Vortex icons created by Freepik - Flaticon</a>
 - <a href="https://www.flaticon.com/free-icons/goal" title="goal icons">Goal icons created by Freepik - Flaticon</a>
 - <a href="https://www.flaticon.com/free-icons/maple-leaf" title="maple leaf icons">Maple leaf icons created by max.icons - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/rune" title="rune icons">Rune icons created by Magnific - Flaticon</a>
+- <a href="https://www.flaticon.com/free-icons/dominican-republic" title="dominican republic icons">Dominican republic icons created by Magnific - Flaticon</a>
 
 ## Hero Tab
 
