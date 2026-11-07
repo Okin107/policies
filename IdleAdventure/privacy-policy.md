@@ -7,11 +7,12 @@ This privacy policy applies to the Idle Adventure app (hereby referred to as "Ap
 The Application collects the following information when you use it:
 
 *   **Account information:** When you register an account, the Application collects your chosen username and a hashed version of your password. Your password is never stored in plain text.
+*   **Sign-in information:** If you choose to link a Google or Apple account, the Application receives a unique account identifier from that provider, which lets you sign in to your account with it. Depending on what you allow on the provider's sign-in screen, this may include the email address on that account. If you use Apple's "Hide My Email", only the relay address Apple gives us is received. The Application never sees or stores your Google or Apple password.
 *   **Game progress:** Your gameplay data (including stage progress, currencies, companions, artifacts, achievements, and other in-game state) is stored locally on your device and synced to our servers for cloud save functionality.
 *   **Device information:** The Application collects your device model, operating system and version, screen resolution, and language/locale. This information helps the Service Provider understand what devices players use and debug issues.
 *   **Leaderboard data:** If you register an account, your username, world, and max stage may be displayed publicly on the in-game leaderboard.
 
-The Application does not collect your precise location, email address, phone number, or any other personal contact information.
+The Application does not collect your precise location, phone number, or any other personal contact information. An email address is received only if you link a Google or Apple account and allow it on their sign-in screen.
 
 **In-App Purchases**
 
@@ -27,6 +28,8 @@ The Application utilises the following third-party services:
 *   [Google Play Store](https://policies.google.com/privacy) — for app distribution and in-app purchase processing (Android)
 *   [MongoDB Atlas](https://www.mongodb.com/legal/privacy-policy) — for cloud data storage
 *   [Render](https://render.com/privacy) — for hosting the backend API
+*   [Sign in with Apple](https://www.apple.com/legal/privacy/) — optional account sign-in
+*   [Google Sign-In](https://policies.google.com/privacy) — optional account sign-in
 
 The Service Provider may disclose User Provided and Automatically Collected Information:
 
@@ -38,7 +41,7 @@ The Service Provider may disclose User Provided and Automatically Collected Info
 
 You can stop all collection of information by the Application easily by uninstalling it. You may use the standard uninstall processes as may be available as part of your mobile device or via the mobile application marketplace.
 
-If you have registered an account and wish to have your data deleted, please contact the Service Provider at nikogoga87@gmail.com.
+If you have registered an account and wish to have your data deleted, please contact the Service Provider at nikogoga87@gmail.com. Deleting your account also removes any Google or Apple account linked to it.
 
 **Data Retention Policy**
 
@@ -58,7 +61,7 @@ The Service Provider is concerned about safeguarding the confidentiality of your
 
 This Privacy Policy may be updated from time to time for any reason. The Service Provider will notify you of any changes to the Privacy Policy by updating this page with the new Privacy Policy. You are advised to consult this Privacy Policy regularly for any changes, as continued use is deemed approval of all changes.
 
-This privacy policy is effective as of 2026-05-13.
+This privacy policy is effective as of 2026-11-07.
 
 **Your Consent**
 
