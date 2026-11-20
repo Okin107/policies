@@ -49,3 +49,26 @@
     if (mnav && !mnav.hidden) { setMenu(false); burger.focus(); }
   });
 })();
+
+// Game page trailer: muted autoplay loop while on screen; the button turns sound on and off
+(function () {
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('.phone').forEach(function (phone) {
+    var v = phone.querySelector('video.trailer');
+    var btn = phone.querySelector('.sound');
+    if (!v) return;
+    if ('IntersectionObserver' in window && !reduce) {
+      new IntersectionObserver(function (es) {
+        es.forEach(function (e) { if (e.isIntersecting) { var p = v.play(); if (p && p.catch) p.catch(function () {}); } else v.pause(); });
+      }, { threshold: 0.35 }).observe(v);
+    } else {
+      v.controls = true;
+    }
+    if (btn) btn.addEventListener('click', function () {
+      v.muted = !v.muted;
+      if (!v.muted) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+      btn.textContent = v.muted ? '🔇' : '🔊';
+      btn.setAttribute('aria-label', v.muted ? 'Turn sound on' : 'Turn sound off');
+    });
+  });
+})();

@@ -2,14 +2,34 @@
 layout: base
 ---
 {% assign g = site.data.games | where: "key", page.game | first %}
-<section class="game-hero" style="--splash:url('{{ g.splash }}')">
+<div class="game-page theme-{{ g.theme }}">
+{% if g.theme == "ia" %}<div class="scene-dim" aria-hidden="true"></div><div class="scene-clouds c1" aria-hidden="true"></div><div class="scene-clouds c2" aria-hidden="true"></div><div class="scene-clouds c3" aria-hidden="true"></div>
+<img class="far f1" src="/IdleAdventure/assets/scene/far_island_1.png" alt="" aria-hidden="true"><img class="far f2" src="/IdleAdventure/assets/scene/far_island_3.png" alt="" aria-hidden="true"><img class="far f3" src="/IdleAdventure/assets/scene/far_island_2.png" alt="" aria-hidden="true"><img class="far f4" src="/IdleAdventure/assets/scene/far_island_1.png" alt="" aria-hidden="true">{% endif %}
+<section class="game-hero"{% if g.theme != "ia" %} style="--splash:url('{{ g.splash }}')"{% endif %}>
   <div class="wrap">
     <span class="pill {{ g.status }}">{% if g.status == "out" %}Out now on iOS and Android{% else %}Coming soon{% endif %}</span>
-    {% if g.logo %}<h1 class="game-logo"><img src="{{ g.logo }}" alt="{{ g.name }}" width="{{ g.logo_size[0] }}" height="{{ g.logo_size[1] }}"></h1>{% else %}<h1 class="lil grad game-title">{{ g.name }}</h1>{% endif %}
+    <h1 class="game-logo"><img src="{{ g.logo }}" alt="{{ g.name }}" width="{{ g.logo_size[0] }}" height="{{ g.logo_size[1] }}"></h1>
+    {% if g.theme == "ia" %}<img class="hero-island" src="/IdleAdventure/assets/scene/island.png" alt="" width="128" height="192">{% endif %}
     <p class="lede">{{ page.lede }}</p>
     {% include stores.html game=g %}
   </div>
 </section>
+{% if g.shots %}<section class="section media-sec">
+  <div class="wrap">
+    <h2 class="sec-title">See it in action</h2>
+    <p class="sub">{{ g.media_sub }}</p>
+    <div class="media">
+      <div class="phone">
+        {% if g.video %}<video class="trailer" src="{{ g.video }}" poster="{{ g.poster }}" muted loop playsinline preload="metadata" aria-label="{{ g.name }} trailer"></video>
+        <button class="sound" type="button" aria-label="Turn sound on">🔇</button>
+        {% else %}<img class="cover" src="{{ g.cover }}" alt="{{ g.cover_label }}" loading="lazy"><span class="cover-label">{{ g.cover_label }}</span>{% endif %}
+      </div>
+      <div class="shots" style="--n:{{ g.shots | size }}">
+        {% for s in g.shots %}<figure class="shot"><img src="{{ s.src }}" alt="{{ s.alt }}" width="480" height="1043" loading="lazy"></figure>{% endfor %}
+      </div>
+    </div>
+  </div>
+</section>{% endif %}
 {{ content }}
 <section class="section">
   <div class="wrap">
@@ -20,3 +40,6 @@ layout: base
     </div>
   </div>
 </section>
+{% if g.theme == "ia" %}<div class="ground"><p class="sec-title band-line">{{ page.band }}</p></div>
+{% else %}<section class="band"><div class="wrap"><p class="big lil grad">{{ page.band }}</p></div></section>{% endif %}
+</div>

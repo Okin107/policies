@@ -3,6 +3,7 @@
   url: /IdleAdventure/
   icon: /assets/ia_icon.png
   banner: /assets/ia_banner.jpg
+  theme: ia
   splash: /IdleAdventure/assets/hero.jpg
   logo: /IdleAdventure/assets/logo.png
   logo_size: [801, 297]
@@ -10,6 +11,18 @@
   short: Build your team, discover artifacts, prestige for permanent power and conquer the endless worlds.
   apple: https://apps.apple.com/us/app/idleadventure/id6769121473
   google: https://play.google.com/store/apps/details?id=com.pmn.idleadventure
+  media_sub: A 15 second look, then the screens.
+  video: /IdleAdventure/assets/trailer.mp4
+  poster: /IdleAdventure/assets/trailer-poster.jpg
+  shots:
+    - {src: /IdleAdventure/assets/shots/01.jpg, alt: "Battle on the Sunny Beach"}
+    - {src: /IdleAdventure/assets/shots/02.jpg, alt: "Dungeon floor boss"}
+    - {src: /IdleAdventure/assets/shots/03.jpg, alt: "Hiring companions in the Tavern"}
+    - {src: /IdleAdventure/assets/shots/04.jpg, alt: "The Temple's rune tree"}
+    - {src: /IdleAdventure/assets/shots/05.jpg, alt: "Pets"}
+    - {src: /IdleAdventure/assets/shots/06.jpg, alt: "Hero skins"}
+    - {src: /IdleAdventure/assets/shots/07.jpg, alt: "The Dungeon Estate"}
+    - {src: /IdleAdventure/assets/shots/08.jpg, alt: "Prestige"}
   docs:
     - {file: privacy-policy, title: Privacy policy}
     - {file: account-deletion, title: Account and data deletion}
@@ -19,11 +32,25 @@
   url: /IdleAdventureChampions/
   icon: /assets/champions_icon.png
   banner: /assets/champions_banner.jpg
+  theme: ch
   splash: /IdleAdventureChampions/assets/splash.jpg
   logo: /IdleAdventureChampions/assets/logo.png
   logo_size: [1200, 346]
   status: soon
   short: Recruit heroes, build your squad and battle across the realms.
+  media_sub: The screens at a glance. A trailer follows at launch.
+  cover: /IdleAdventureChampions/assets/shots/03.jpg
+  cover_label: Battle
+  shots:
+    - {src: /IdleAdventureChampions/assets/shots/01.jpg, alt: "Campaign map"}
+    - {src: /IdleAdventureChampions/assets/shots/02.jpg, alt: "Stage preview"}
+    - {src: /IdleAdventureChampions/assets/shots/04.jpg, alt: "Your deck"}
+    - {src: /IdleAdventureChampions/assets/shots/05.jpg, alt: "Hero card"}
+    - {src: /IdleAdventureChampions/assets/shots/06.jpg, alt: "Arena"}
+    - {src: /IdleAdventureChampions/assets/shots/07.jpg, alt: "Deckhouse draw"}
+    - {src: /IdleAdventureChampions/assets/shots/08.jpg, alt: "Observatory towers"}
+    - {src: /IdleAdventureChampions/assets/shots/09.jpg, alt: "Town"}
+    - {src: /IdleAdventureChampions/assets/shots/10.jpg, alt: "Leaderboard"}
   docs:
     - {file: privacy-policy, title: Privacy policy}
     - {file: account-deletion, title: Account and data deletion}

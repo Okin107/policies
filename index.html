@@ -1,56 +1,56 @@
 ---
 layout: base
 title: PHMN Solutions
-description: Fair idle games for iOS and Android, made by one indie dev in Berlin. Idle Adventure is out now, Idle Adventure Champions is coming soon.
+description: Fair games for iOS and Android, made by one indie dev in Berlin. Idle Adventure is out now, Idle Adventure Champions is coming soon.
 ---
-<section class="hero">
-  <div class="hero-bg" aria-hidden="true">
-    <span style="background-image:url('/IdleAdventure/assets/hero.jpg')"></span>
-    <span style="background-image:url('/IdleAdventureChampions/assets/splash.jpg')"></span>
-  </div>
-  <div class="wrap">
-    <span class="eyebrow">Indie studio · Berlin</span>
-    <h1 class="lil grad">Fair idle games,<br>made by one dev.</h1>
-    <p class="lede">No forced ads, no energy bars, no timers. Just deep idle RPGs that keep playing while you're away.</p>
-    <div class="ctas">
-      <a class="btn btn-gold" href="/IdleAdventure/">Play Idle Adventure</a>
-      <a class="btn btn-ghost" href="/IdleAdventureChampions/">Champions: coming soon</a>
+<section class="intro">
+  <div class="wrap intro-row">
+    <div>
+      <span class="eyebrow">Indie studio · Berlin</span>
+      <h1 class="lil grad">Fair games,<br class="br-phone"> made by one dev.</h1>
+      <p>No forced ads. No energy bars. Just games worth your time.</p>
     </div>
-    <ul class="ticks"><li>No forced ads</li><li>Progress while you're away</li><li>Cloud saves</li><li>iOS and Android</li></ul>
+    <ul class="ticks"><li>No forced ads</li><li>Cloud saves</li><li>iOS and Android</li></ul>
   </div>
 </section>
 
-<section class="section" id="games">
-  <div class="wrap">
-    <h2 class="lil">Our games</h2>
-    <p class="sub">Two idle worlds, one fair promise.</p>
-    <div class="games">
-      {% for g in site.data.games %}
-      <article class="game-card">
-        <a class="ban" href="{{ g.url }}" style="background-image:url('{{ g.banner }}')" aria-label="{{ g.name }}"></a>
-        <div class="body">
-          <div class="title">
-            <img src="{{ g.icon }}" alt="" width="88" height="88" loading="lazy">
-            <div><span class="pill {{ g.status }}">{% if g.status == "out" %}Out now{% else %}Coming soon{% endif %}</span><h3 class="lil">{{ g.name }}</h3></div>
-          </div>
-          <p>{{ g.short }}</p>
-          {% include stores.html game=g %}
-          <a class="more" href="{{ g.url }}">Explore the game</a>
+{% assign ia = site.data.games | where: "key", "IdleAdventure" | first %}{% assign ch = site.data.games | where: "key", "IdleAdventureChampions" | first %}
+<section id="games">
+  <div class="wrap showcase">
+    <article class="feat">
+      <a class="art" href="{{ ia.url }}" aria-label="{{ ia.name }}"><img src="{{ ia.logo }}" alt="" width="801" height="297"></a>
+      <div class="info">
+        <img class="icon" src="{{ ia.icon }}" alt="" width="72" height="72">
+        <div><span class="pill out">Out now</span></div>
+        <h2 class="lil">{{ ia.name }}</h2>
+        <p>{{ ia.short }}</p>
+        {% include stores.html game=ia %}
+        <a class="more" href="{{ ia.url }}">Explore the game</a>
+      </div>
+    </article>
+    <article class="game-card">
+      <a class="ban" href="{{ ch.url }}" style="background-image:url('{{ ch.banner }}')" aria-label="{{ ch.name }}"></a>
+      <div class="body">
+        <div class="title">
+          <img src="{{ ch.icon }}" alt="" width="78" height="78" loading="lazy">
+          <div><span class="pill soon">Coming soon</span><h3 class="lil">{{ ch.name }}</h3></div>
         </div>
-      </article>
-      {% endfor %}
-    </div>
+        <p>{{ ch.short }}</p>
+        {% include stores.html game=ch %}
+        <a class="more" href="{{ ch.url }}">Explore the game</a>
+      </div>
+    </article>
   </div>
 </section>
 
 <section class="section section-tint">
   <div class="wrap">
     <h2 class="lil">Made to be fair</h2>
-    <p class="sub">The idle games we always wanted to play ourselves.</p>
+    <p class="sub">The games we always wanted to play ourselves.</p>
     <div class="values">
       <div class="card value"><div class="emo">🚫</div><h3 class="lil">No forced ads</h3><p>Nothing interrupts your game.</p></div>
       <div class="card value"><div class="emo">⚡</div><h3 class="lil">No energy</h3><p>Play as long as you like, whenever you like.</p></div>
-      <div class="card value"><div class="emo">🌙</div><h3 class="lil">Idle for real</h3><p>Your team keeps fighting while you're away.</p></div>
+      <div class="card value"><div class="emo">🎮</div><h3 class="lil">Play at your pace</h3><p>Push hard or check in for a minute. Both count.</p></div>
       <div class="card value"><div class="emo">☁️</div><h3 class="lil">Cloud saves</h3><p>Pick up your progress on any device.</p></div>
     </div>
   </div>
