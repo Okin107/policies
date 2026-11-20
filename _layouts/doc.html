@@ -1,0 +1,19 @@
+---
+layout: base
+---
+{% assign g = site.data.games | where: "key", page.game | first %}{% assign dname = page.name | remove: ".md" %}{% assign d = g.docs | where: "file", dname | first %}
+<div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>›</span><a href="{{ g.url }}">{{ g.name }}</a><span>›</span><b>{{ d.title | default: page.title }}</b></nav>
+  <div class="doc">
+    <aside class="doc-side">
+      <a class="doc-game" href="{{ g.url }}"><img src="{{ g.icon }}" alt="" width="44" height="44"><b>{{ g.name }}</b></a>
+      <a class="doc-link" href="{{ g.url }}">Overview</a>
+      {% for x in g.docs %}<a class="doc-link{% if x.file == dname %} on{% endif %}" href="{{ g.url }}{{ x.file }}">{{ x.title }}</a>{% endfor %}
+    </aside>
+    <article class="paper">
+      <h1 class="lil">{{ d.title | default: page.title }}</h1>
+      <p class="paper-meta">{{ g.name }}</p>
+      <div class="prose">{{ content }}</div>
+    </article>
+  </div>
+</div>

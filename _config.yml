@@ -1,0 +1,11 @@
+title: PHMN Solutions
+description: Fair idle games, made by one indie dev in Berlin.
+url: https://phmn-solutions.com
+discord: https://discord.gg/G6ewzKfB9r
+exclude: [README.md, LICENSE]
+defaults:
+  - scope: {path: "IdleAdventure"}
+    values: {layout: doc, game: IdleAdventure}
+  - scope: {path: "IdleAdventureChampions"}
+    values: {layout: doc, game: IdleAdventureChampions}
+email: nikogoga87@gmail.com

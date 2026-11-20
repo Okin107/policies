@@ -1,46 +1,16 @@
-<!doctype html>
-<html lang="de">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Impressum · PHMN Solutions</title>
-<meta name="robots" content="noindex">
-<link rel="icon" href="../assets/favicon.png">
-<style>
-  @font-face { font-family: "Lilita"; src: url("../assets/LilitaOne-Regular.ttf") format("truetype"); font-display: swap; }
-  :root { --bg: #1d232a; --panel: #303941; --edge: #6a7d94; --gold: #feb918; --text: #eef2f6; --muted: #a9b4c0; }
-  * { box-sizing: border-box; }
-  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
-  main { max-width: 560px; margin: 0 auto; padding: 32px 16px; }
-  a { color: var(--gold); }
-  .back { color: var(--muted); text-decoration: none; font-size: 14px; }
-  h1 { font-family: "Lilita", sans-serif; font-weight: 400; color: var(--gold); font-size: 34px; margin: 12px 0 4px; }
-  .sub { color: var(--muted); margin: 0 0 20px; }
-  section { background: var(--panel); border: 3px solid var(--edge); border-radius: 16px; padding: 18px 20px; margin-bottom: 16px; }
-  h2 { font-size: 15px; text-transform: uppercase; letter-spacing: .5px; color: var(--muted); margin: 0 0 8px; }
-  p { margin: 0; }
-</style>
-</head>
-<body>
-<main>
-  <a class="back" href="../">← PHMN Solutions</a>
-  <h1>Impressum</h1>
+---
+layout: base
+title: Impressum
+lang: de
+robots: noindex
+---
+<div class="wrap legal-page">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a><span>›</span><b>Impressum</b></nav>
+  <h1 class="lil">Impressum</h1>
   <p class="sub">Legal notice</p>
-
-  <section>
-    <h2>Angaben gemäß § 5 DDG</h2>
-    <p>Niko Goga<br>PHMN Solutions<br>Anschrift folgt</p>
-  </section>
-
-  <section>
-    <h2>Kontakt</h2>
-    <p>E-Mail: <a href="mailto:nikogoga87@gmail.com">nikogoga87@gmail.com</a></p>
-  </section>
-
-  <section>
-    <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
-    <p>Niko Goga (Anschrift wie oben)</p>
-  </section>
-</main>
-</body>
-</html>
+  <div class="legal-grid">
+    <section class="card"><h2>Angaben gemäß § 5 DDG</h2><p>Niko Goga<br>PHMN Solutions<br>Anschrift folgt</p></section>
+    <section class="card"><h2>Kontakt</h2><p>E-Mail: {% if site.email %}<a href="mailto:{{ site.email }}">{{ site.email }}</a>{% endif %}</p></section>
+    <section class="card"><h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2><p>Niko Goga (Anschrift wie oben)</p></section>
+  </div>
+</div>

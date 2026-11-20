@@ -1,0 +1,22 @@
+---
+layout: base
+---
+{% assign g = site.data.games | where: "key", page.game | first %}
+<section class="game-hero" style="--splash:url('{{ g.splash }}')">
+  <div class="wrap">
+    <span class="pill {{ g.status }}">{% if g.status == "out" %}Out now on iOS and Android{% else %}Coming soon{% endif %}</span>
+    {% if g.logo %}<h1 class="game-logo"><img src="{{ g.logo }}" alt="{{ g.name }}" width="1200" height="346"></h1>{% else %}<h1 class="lil grad game-title">{{ g.name }}</h1>{% endif %}
+    <p class="lede">{{ page.lede }}</p>
+    {% include stores.html game=g %}
+  </div>
+</section>
+{{ content }}
+<section class="section">
+  <div class="wrap">
+    <div class="info-grid">
+      <article class="card"><h3 class="lil">Signing in</h3><p>{{ page.signin }}</p></article>
+      <article class="card"><h3 class="lil">Support</h3><ul class="links">{% for d in g.docs %}<li><a href="{{ g.url }}{{ d.file }}">{{ d.title }}</a></li>{% endfor %}</ul></article>
+      <article class="card"><h3 class="lil">Contact</h3><ul class="links">{% if site.email %}<li><a href="mailto:{{ site.email }}">Email us</a></li>{% endif %}<li><a href="{{ site.discord }}">Join the Discord</a></li><li><a href="/impressum/">Impressum</a></li></ul></article>
+    </div>
+  </div>
+</section>

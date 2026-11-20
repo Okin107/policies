@@ -1,0 +1,37 @@
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="/" aria-label="PHMN Solutions home"><img src="/assets/brand/phmn-logo-dark.svg" alt="PHMN Solutions" width="147" height="50"></a>
+    <nav class="nav" aria-label="Main">
+      <div class="dd">
+        <button class="dd-btn" type="button" aria-expanded="false">Games</button>
+        <div class="dd-menu">
+          {% for g in site.data.games %}<a class="dd-game" href="{{ g.url }}"><img src="{{ g.icon }}" alt="" width="44" height="44"><span><b>{{ g.name }}</b><small class="{{ g.status }}">{% if g.status == "out" %}Out now{% else %}Coming soon{% endif %}</small></span></a>
+          {% endfor %}
+        </div>
+      </div>
+      <a class="nav-link" href="/#community">Community</a>
+      <div class="dd">
+        <button class="dd-btn" type="button" aria-expanded="false">Support</button>
+        <div class="dd-menu dd-wide">
+          {% for g in site.data.games %}<div class="dd-col"><h6>{{ g.name }}</h6>{% for d in g.docs %}<a href="{{ g.url }}{{ d.file }}">{{ d.title }}</a>{% endfor %}</div>
+          {% endfor %}<div class="dd-col"><h6>PHMN Solutions</h6><a href="/impressum/">Impressum</a><a href="{{ site.discord }}">Discord</a></div>
+        </div>
+      </div>
+    </nav>
+    <a class="btn btn-gold btn-sm head-cta" href="/IdleAdventure/">Play Idle Adventure</a>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mnav"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mnav" id="mnav" hidden>
+    <div class="wrap">
+      <p class="mnav-h">Games</p>
+      {% for g in site.data.games %}<a class="dd-game" href="{{ g.url }}"><img src="{{ g.icon }}" alt="" width="44" height="44"><span><b>{{ g.name }}</b><small class="{{ g.status }}">{% if g.status == "out" %}Out now{% else %}Coming soon{% endif %}</small></span></a>
+      {% endfor %}
+      <a class="mnav-link" href="/#community">Community</a>
+      {% for g in site.data.games %}<details class="mnav-group"><summary>{{ g.name }}: support</summary>{% for d in g.docs %}<a href="{{ g.url }}{{ d.file }}">{{ d.title }}</a>{% endfor %}</details>
+      {% endfor %}
+      <a class="mnav-link" href="/impressum/">Impressum</a>
+      <a class="btn btn-gold btn-block" href="/IdleAdventure/">Play Idle Adventure</a>
+    </div>
+  </div>
+</header>

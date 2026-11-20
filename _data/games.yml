@@ -1,0 +1,28 @@
+- key: IdleAdventure
+  name: Idle Adventure
+  url: /IdleAdventure/
+  icon: /assets/ia_icon.png
+  banner: /assets/ia_banner.jpg
+  splash: /IdleAdventure/assets/splash.jpg
+  status: out
+  short: Build your team, discover artifacts, prestige for permanent power and conquer the endless worlds.
+  apple: https://apps.apple.com/us/app/idleadventure/id6769121473
+  google: https://play.google.com/store/apps/details?id=com.pmn.idleadventure
+  docs:
+    - {file: privacy-policy, title: Privacy policy}
+    - {file: account-deletion, title: Account and data deletion}
+    - {file: attributions, title: Attributions}
+- key: IdleAdventureChampions
+  name: "Idle Adventure: Champions"
+  url: /IdleAdventureChampions/
+  icon: /assets/champions_icon.png
+  banner: /assets/champions_banner.jpg
+  splash: /IdleAdventureChampions/assets/splash.jpg
+  logo: /IdleAdventureChampions/assets/logo.png
+  status: soon
+  short: Recruit heroes, build your squad and battle across the realms.
+  docs:
+    - {file: privacy-policy, title: Privacy policy}
+    - {file: account-deletion, title: Account and data deletion}
+    - {file: refund-policy, title: Refund policy}
+    - {file: attributions, title: Attributions}
