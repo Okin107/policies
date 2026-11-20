@@ -395,3 +395,20 @@ body.menu-open { overflow: hidden; }
 @media (prefers-reduced-motion: reduce) { .scene-clouds { animation: none; } }
 .br-phone { display: none; }
 @media (max-width: 720px) { .br-phone { display: inline; } }
+
+/* Idle Adventure hero: text and buttons beside the logo, island to the right (phone: island last, smaller) */
+.theme-ia .game-hero .wrap { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); grid-template-areas: "pill island" "logo island" "lede island" "stores island"; column-gap: 40px; align-items: center; text-align: left; }
+.theme-ia .game-hero .pill { grid-area: pill; justify-self: start; align-self: end; }
+.theme-ia .game-hero .game-logo { grid-area: logo; margin: 14px 0 0; max-width: 560px; }
+.theme-ia .game-hero .hero-island { grid-area: island; width: 400px; max-width: 100%; margin: 0 auto; }
+.theme-ia .game-hero .lede { grid-area: lede; margin: 18px 0 0; max-width: 560px; }
+.theme-ia .game-hero .stores { grid-area: stores; justify-content: flex-start; margin: 24px 0 0; max-width: 460px; align-self: start; }
+.theme-ia .game-hero { padding: 48px 0 30px; }
+@media (max-width: 860px) {
+  .theme-ia .game-hero .wrap { grid-template-columns: 1fr; grid-template-areas: "pill" "logo" "lede" "stores" "island"; text-align: center; }
+  .theme-ia .game-hero .pill { justify-self: center; }
+  .theme-ia .game-hero .game-logo { margin: 12px auto 0; }
+  .theme-ia .game-hero .lede { margin: 16px auto 0; }
+  .theme-ia .game-hero .stores { justify-content: center; margin: 22px auto 0; }
+  .theme-ia .game-hero .hero-island { width: 200px; margin: 18px auto -10px; }
+}

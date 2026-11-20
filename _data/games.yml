@@ -15,14 +15,14 @@
   video: /IdleAdventure/assets/trailer.mp4
   poster: /IdleAdventure/assets/trailer-poster.jpg
   shots:
-    - {src: /IdleAdventure/assets/shots/01.jpg, alt: "Battle on the Sunny Beach"}
-    - {src: /IdleAdventure/assets/shots/02.jpg, alt: "Dungeon floor boss"}
-    - {src: /IdleAdventure/assets/shots/03.jpg, alt: "Hiring companions in the Tavern"}
-    - {src: /IdleAdventure/assets/shots/04.jpg, alt: "The Temple's rune tree"}
-    - {src: /IdleAdventure/assets/shots/05.jpg, alt: "Pets"}
-    - {src: /IdleAdventure/assets/shots/06.jpg, alt: "Hero skins"}
-    - {src: /IdleAdventure/assets/shots/07.jpg, alt: "The Dungeon Estate"}
-    - {src: /IdleAdventure/assets/shots/08.jpg, alt: "Prestige"}
+    - {src: /IdleAdventure/assets/shots/01.jpg, alt: "Battle at Thunder Peak"}
+    - {src: /IdleAdventure/assets/shots/02.jpg, alt: "Artifacts on the Sunny Beach"}
+    - {src: /IdleAdventure/assets/shots/03.jpg, alt: "Prestige"}
+    - {src: /IdleAdventure/assets/shots/04.jpg, alt: "Idle Progress while you were away"}
+    - {src: /IdleAdventure/assets/shots/05.jpg, alt: "Hero Mastery tree"}
+    - {src: /IdleAdventure/assets/shots/06.jpg, alt: "Leaderboard"}
+    - {src: /IdleAdventure/assets/shots/07.jpg, alt: "The Trials"}
+    - {src: /IdleAdventure/assets/shots/08.jpg, alt: "Achievements"}
   docs:
     - {file: privacy-policy, title: Privacy policy}
     - {file: account-deletion, title: Account and data deletion}
