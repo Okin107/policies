@@ -174,11 +174,12 @@ body.menu-open { overflow: hidden; }
 
 /* Game page hero */
 .game-hero { position: relative; overflow: hidden; isolation: isolate; padding: 96px 0 84px; text-align: center; }
-.game-hero::before { content: ""; position: absolute; inset: -30px; z-index: -2; background: var(--splash) center 40% / cover no-repeat; filter: saturate(1.05); }
+.game-hero::before { content: ""; position: absolute; inset: -30px; z-index: -2; background: var(--splash) center 45% / cover no-repeat; filter: saturate(1.05); }
 .game-hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(11,16,21,.45) 0%, rgba(11,16,21,.8) 58%, var(--bg) 100%); }
 .game-title { font-size: clamp(48px, 8vw, 92px); line-height: 1; margin: 18px 0 18px; filter: drop-shadow(0 8px 24px rgba(0,0,0,.6)); }
 .game-logo { margin: 16px auto 18px; max-width: 600px; }
 .game-logo img { display: block; width: 100%; height: auto; filter: drop-shadow(0 10px 28px rgba(0,0,0,.55)); }
+.game-logo img[src*="IdleAdventure/"] { image-rendering: pixelated; max-width: 520px; margin: 0 auto; }
 .game-hero .stores { justify-content: center; max-width: 440px; margin: 28px auto 0; }
 .info-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 18px; }
 .info-grid h3 { margin: 0 0 10px; font-size: 22px; color: var(--gold-light); }

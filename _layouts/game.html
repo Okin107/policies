@@ -5,7 +5,7 @@ layout: base
 <section class="game-hero" style="--splash:url('{{ g.splash }}')">
   <div class="wrap">
     <span class="pill {{ g.status }}">{% if g.status == "out" %}Out now on iOS and Android{% else %}Coming soon{% endif %}</span>
-    {% if g.logo %}<h1 class="game-logo"><img src="{{ g.logo }}" alt="{{ g.name }}" width="1200" height="346"></h1>{% else %}<h1 class="lil grad game-title">{{ g.name }}</h1>{% endif %}
+    {% if g.logo %}<h1 class="game-logo"><img src="{{ g.logo }}" alt="{{ g.name }}" width="{{ g.logo_size[0] }}" height="{{ g.logo_size[1] }}"></h1>{% else %}<h1 class="lil grad game-title">{{ g.name }}</h1>{% endif %}
     <p class="lede">{{ page.lede }}</p>
     {% include stores.html game=g %}
   </div>

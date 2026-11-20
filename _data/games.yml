@@ -3,7 +3,9 @@
   url: /IdleAdventure/
   icon: /assets/ia_icon.png
   banner: /assets/ia_banner.jpg
-  splash: /IdleAdventure/assets/splash.jpg
+  splash: /IdleAdventure/assets/hero.jpg
+  logo: /IdleAdventure/assets/logo.png
+  logo_size: [801, 297]
   status: out
   short: Build your team, discover artifacts, prestige for permanent power and conquer the endless worlds.
   apple: https://apps.apple.com/us/app/idleadventure/id6769121473
@@ -19,6 +21,7 @@
   banner: /assets/champions_banner.jpg
   splash: /IdleAdventureChampions/assets/splash.jpg
   logo: /IdleAdventureChampions/assets/logo.png
+  logo_size: [1200, 346]
   status: soon
   short: Recruit heroes, build your squad and battle across the realms.
   docs:
