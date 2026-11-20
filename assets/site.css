@@ -203,7 +203,7 @@ body.menu-open { overflow: hidden; }
 .paper h1 { margin: 0; font-size: clamp(32px, 4vw, 44px); line-height: 1.1; color: var(--gold-light); }
 .paper-meta { margin: 6px 0 26px; color: var(--muted); }
 .prose { color: #cbd6df; font-size: 16.5px; overflow-wrap: anywhere; }
-.prose > p:first-child:has(> strong:only-child) { display: none; }
+.prose > p:first-child:has(> strong:only-child), .prose > h1:first-child { display: none; }
 .prose h1, .prose h2, .prose h3 { color: var(--text); line-height: 1.25; margin: 30px 0 10px; }
 .prose h1 { font-size: 26px; } .prose h2 { font-size: 22px; } .prose h3 { font-size: 19px; }
 .prose p strong:only-child { color: var(--text); font-size: 18px; }
