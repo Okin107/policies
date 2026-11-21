@@ -1,0 +1,34 @@
+{%- comment -%}
+Search and share tags, every page: one address per page (canonical), the share preview, and structured data (JSON-LD)
+saying who makes the games, what each game is and where a page sits. Public facts only (names, store and social links).
+{%- endcomment -%}
+{%- assign canon = page.url | replace: 'index.html', '' | prepend: site.url -%}
+{%- assign desc = page.description | default: site.description -%}
+{%- if include.doc %}{% capture desc %}{{ include.doc.title }} for {{ include.game.name }}, a game by PHMN Solutions.{% endcapture %}{% endif -%}
+{%- assign img = page.og_image | default: '/assets/ia_banner.jpg' | prepend: site.url -%}
+<link rel="canonical" href="{{ canon }}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PHMN Solutions">
+<meta property="og:url" content="{{ canon }}">
+<meta property="og:locale" content="{% if page.lang == 'de' %}de_DE{% else %}en_US{% endif %}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ include.title | escape }}">
+<meta name="twitter:description" content="{{ desc | escape }}">
+<meta name="twitter:image" content="{{ img }}">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Organization","@id":"{{ site.url }}/#org","name":"PHMN Solutions","url":"{{ site.url }}/","logo":"{{ site.url }}/assets/brand/apple-touch-icon.png","description":{{ site.description | jsonify }},"sameAs":[{% for s in site.socials %}{{ s | jsonify }},{% endfor %}{{ site.discord | jsonify }}]},
+{"@type":"WebSite","@id":"{{ site.url }}/#site","name":"PHMN Solutions","url":"{{ site.url }}/","publisher":{"@id":"{{ site.url }}/#org"},"inLanguage":"en"}
+{%- if include.game and page.layout == 'game' -%}
+{%- assign g = include.game -%}
+,{"@type":["VideoGame","MobileApplication"],"@id":"{{ site.url }}{{ g.url }}#game","name":{{ g.name | jsonify }},"url":"{{ site.url }}{{ g.url }}","description":{{ desc | jsonify }},"image":"{{ site.url }}{{ g.banner }}","screenshot":[{% for s in g.shots %}"{{ site.url }}{{ s.src }}"{% unless forloop.last %},{% endunless %}{% endfor %}],"operatingSystem":"iOS, Android","applicationCategory":"GameApplication","gamePlatform":["iOS","Android"],"genre":["Idle game","Role-playing game"],"author":{"@id":"{{ site.url }}/#org"},"publisher":{"@id":"{{ site.url }}/#org"}
+{%- if g.status == 'out' -%}
+,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR","availability":"https://schema.org/InStock"},"installUrl":{{ g.apple | jsonify }},"sameAs":[{{ g.apple | jsonify }},{{ g.google | split: '&' | first | jsonify }}]
+{%- endif -%}
+}
+,{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"{{ site.url }}/"},{"@type":"ListItem","position":2,"name":{{ g.name | jsonify }},"item":"{{ site.url }}{{ g.url }}"}]}
+{%- elsif include.doc -%}
+,{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"{{ site.url }}/"},{"@type":"ListItem","position":2,"name":{{ include.game.name | jsonify }},"item":"{{ site.url }}{{ include.game.url }}"},{"@type":"ListItem","position":3,"name":{{ include.doc.title | jsonify }},"item":"{{ canon }}"}]}
+{%- endif %}
+]}
+</script>

@@ -3,7 +3,15 @@ description: Fair idle games, made by one indie dev in Berlin.
 url: https://phmn-solutions.com
 discord: https://discord.gg/G6ewzKfB9r
 exclude: [README.md, LICENSE]
+plugins: [jekyll-sitemap]
+# Public profiles (structured data sameAs, the social links)
+socials:
+  - https://www.tiktok.com/@idle_adventure_games
+  - https://www.instagram.com/idle_adventure_games
+  - https://www.youtube.com/@idle_adventure_games
 defaults:
+  - scope: {path: "googleb15fdb148dc78126.html"}
+    values: {sitemap: false}
   - scope: {path: "IdleAdventure"}
     values: {layout: doc, game: IdleAdventure}
   - scope: {path: "IdleAdventureChampions"}
