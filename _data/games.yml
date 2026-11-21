@@ -8,6 +8,7 @@
   logo: /IdleAdventure/assets/logo.png
   logo_size: [801, 297]
   status: out
+  taps: https://ia.phmn-solutions.com/erp/api/site/store-tap
   short: Build your team, discover artifacts, prestige for permanent power and conquer the endless worlds.
   apple: https://apps.apple.com/us/app/idleadventure/id6769121473
   google: https://play.google.com/store/apps/details?id=com.pmn.idleadventure&referrer=utm_source%3Dwebsite%26utm_medium%3Dsite
@@ -37,6 +38,7 @@
   logo: /IdleAdventureChampions/assets/logo.png
   logo_size: [1200, 346]
   status: soon
+  taps: https://champions.phmn-solutions.com/erp/api/site/store-tap
   short: Recruit heroes, build your squad and battle across the realms.
   media_sub: The screens at a glance. A trailer follows at launch.
   cover: /IdleAdventureChampions/assets/shots/03.jpg
