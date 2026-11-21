@@ -23,7 +23,25 @@
 {{ content }}
 </main>
 {% include footer.html %}
-<script src="/assets/site.js?v=3" defer></script>
-<!-- Cloudflare Web Analytics: no cookies, counts page views only --><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "96fc0d80dee34184b88aa3083f71c541"}'></script>
+<script src="/assets/site.js?v=4" defer></script>
+<!-- Cloudflare Web Analytics (no cookies). ?me=1 marks this browser as the owner's: it is never counted (?me=0 undoes it) -->
+<script>
+(function () {
+  var me = false;
+  try {
+    var q = new URLSearchParams(location.search).get('me');
+    if (q === '1') localStorage.setItem('phmn-me', '1');
+    if (q === '0') localStorage.removeItem('phmn-me');
+    me = localStorage.getItem('phmn-me') === '1';
+  } catch (e) {}
+  window.PHMN_ME = me;
+  if (me) return;
+  var s = document.createElement('script');
+  s.defer = true;
+  s.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+  s.setAttribute('data-cf-beacon', '{"token": "96fc0d80dee34184b88aa3083f71c541"}');
+  document.head.appendChild(s);
+})();
+</script>
 </body>
 </html>

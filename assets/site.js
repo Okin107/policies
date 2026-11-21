@@ -73,13 +73,13 @@
   });
 })();
 
-// Store buttons: each tap is counted by its game's server (one counter per day, store and page; no cookies, nothing about
+// Store buttons: each tap is counted by its game's server (never in the owner's browser, ?me=1) (one counter per day, store and page; no cookies, nothing about
 // the person), then the store opens as usual
 (function () {
   document.addEventListener('click', function (e) {
     var a = e.target.closest && e.target.closest('a[data-store]');
     var box = a && a.closest('[data-taps]');
-    if (!box || !navigator.sendBeacon) return;
+    if (!box || !navigator.sendBeacon || window.PHMN_ME) return;
     try { navigator.sendBeacon(box.dataset.taps, JSON.stringify({ store: a.dataset.store, page: location.pathname })); } catch (err) {}
   });
 })();
