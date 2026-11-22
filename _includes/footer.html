@@ -2,7 +2,7 @@
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand">
-        <img src="/assets/brand/phmn-logo-dark.svg" alt="PHMN Solutions" width="162" height="55">
+        <img src="/assets/brand/phmn-logo-dark.svg" alt="PHMN Software" width="162" height="55">
         <p>Fair idle games, made by one indie dev in Berlin.</p>
         {% include social.html size="sm" %}
       </div>
@@ -10,6 +10,6 @@
       {% for g in site.data.games %}<div><h6>{{ g.name }}</h6>{% for d in g.docs %}<a href="{{ g.url }}{{ d.file }}">{{ d.title }}</a>{% endfor %}</div>{% endfor %}
       <div><h6>Company</h6><a href="/impressum/">Impressum</a>{% if site.email %}<a href="mailto:{{ site.email }}">Contact</a>{% endif %}<a href="{{ site.discord }}">Discord</a></div>
     </div>
-    <p class="foot-legal">© {{ site.time | date: "%Y" }} PHMN Solutions · Brand logos from Simple Icons (CC0). TikTok, Instagram, YouTube and Discord are trademarks of their owners.</p>
+    <p class="foot-legal">© {{ site.time | date: "%Y" }} PHMN Software · Brand logos from Simple Icons (CC0). TikTok, Instagram, YouTube and Discord are trademarks of their owners.</p>
   </div>
 </footer>

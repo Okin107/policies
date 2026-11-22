@@ -1,7 +1,7 @@
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap bar">
-    <a class="brand" href="/" aria-label="PHMN Solutions home"><img src="/assets/brand/phmn-logo-dark.svg" alt="PHMN Solutions" width="147" height="50"></a>
+    <a class="brand" href="/" aria-label="PHMN Software home"><img src="/assets/brand/phmn-logo-dark.svg" alt="PHMN Software" width="147" height="50"></a>
     <nav class="nav" aria-label="Main">
       <div class="dd">
         <button class="dd-btn" type="button" aria-expanded="false">Games</button>
@@ -15,7 +15,7 @@
         <button class="dd-btn" type="button" aria-expanded="false">Support</button>
         <div class="dd-menu dd-wide">
           {% for g in site.data.games %}<div class="dd-col"><h6>{{ g.name }}</h6>{% for d in g.docs %}<a href="{{ g.url }}{{ d.file }}">{{ d.title }}</a>{% endfor %}</div>
-          {% endfor %}<div class="dd-col"><h6>PHMN Solutions</h6><a href="/impressum/">Impressum</a><a href="{{ site.discord }}">Discord</a></div>
+          {% endfor %}<div class="dd-col"><h6>PHMN Software</h6><a href="/impressum/">Impressum</a><a href="{{ site.discord }}">Discord</a></div>
         </div>
       </div>
     </nav>

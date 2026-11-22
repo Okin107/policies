@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 {% assign g = site.data.games | where: "key", page.game | first %}{% assign dname = page.name | remove: ".md" %}{% assign d = g.docs | where: "file", dname | first %}
 {% if d %}{% capture ptitle %}{{ d.title }} · {{ g.name }}{% endcapture %}{% elsif page.title %}{% assign ptitle = page.title %}{% else %}{% assign ptitle = site.title %}{% endif %}
-{% if page.seo_title %}{% assign ftitle = page.seo_title %}{% elsif ptitle == site.title %}{% assign ftitle = ptitle %}{% else %}{% capture ftitle %}{{ ptitle }} · PHMN Solutions{% endcapture %}{% endif %}
+{% if page.seo_title %}{% assign ftitle = page.seo_title %}{% elsif ptitle == site.title %}{% assign ftitle = ptitle %}{% else %}{% capture ftitle %}{{ ptitle }} · PHMN Software{% endcapture %}{% endif %}
 <title>{{ ftitle }}</title>
-<meta name="description" content="{% if d %}{{ d.title }} for {{ g.name }}, a game by PHMN Solutions.{% else %}{{ page.description | default: site.description }}{% endif %}">
+<meta name="description" content="{% if d %}{{ d.title }} for {{ g.name }}, a game by PHMN Software.{% else %}{{ page.description | default: site.description }}{% endif %}">
 <meta name="theme-color" content="#0b1015">
 <meta property="og:title" content="{{ ftitle }}">
 <meta property="og:description" content="{{ page.description | default: site.description }}">

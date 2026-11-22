@@ -4,11 +4,11 @@ saying who makes the games, what each game is and where a page sits. Public fact
 {%- endcomment -%}
 {%- assign canon = page.url | replace: 'index.html', '' | prepend: site.url -%}
 {%- assign desc = page.description | default: site.description -%}
-{%- if include.doc %}{% capture desc %}{{ include.doc.title }} for {{ include.game.name }}, a game by PHMN Solutions.{% endcapture %}{% endif -%}
+{%- if include.doc %}{% capture desc %}{{ include.doc.title }} for {{ include.game.name }}, a game by PHMN Software.{% endcapture %}{% endif -%}
 {%- assign img = page.og_image | default: '/assets/ia_banner.jpg' | prepend: site.url -%}
 <link rel="canonical" href="{{ canon }}">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="PHMN Solutions">
+<meta property="og:site_name" content="PHMN Software">
 <meta property="og:url" content="{{ canon }}">
 <meta property="og:locale" content="{% if page.lang == 'de' %}de_DE{% else %}en_US{% endif %}">
 <meta name="twitter:card" content="summary_large_image">
@@ -17,8 +17,8 @@ saying who makes the games, what each game is and where a page sits. Public fact
 <meta name="twitter:image" content="{{ img }}">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
-{"@type":"Organization","@id":"{{ site.url }}/#org","name":"PHMN Solutions","url":"{{ site.url }}/","logo":"{{ site.url }}/assets/brand/apple-touch-icon.png","description":{{ site.description | jsonify }},"sameAs":[{% for s in site.socials %}{{ s | jsonify }},{% endfor %}{{ site.discord | jsonify }}]},
-{"@type":"WebSite","@id":"{{ site.url }}/#site","name":"PHMN Solutions","url":"{{ site.url }}/","publisher":{"@id":"{{ site.url }}/#org"},"inLanguage":"en"}
+{"@type":"Organization","@id":"{{ site.url }}/#org","name":"PHMN Software","url":"{{ site.url }}/","logo":"{{ site.url }}/assets/brand/apple-touch-icon.png","description":{{ site.description | jsonify }},"sameAs":[{% for s in site.socials %}{{ s | jsonify }},{% endfor %}{{ site.discord | jsonify }}]},
+{"@type":"WebSite","@id":"{{ site.url }}/#site","name":"PHMN Software","url":"{{ site.url }}/","publisher":{"@id":"{{ site.url }}/#org"},"inLanguage":"en"}
 {%- if include.game and page.layout == 'game' -%}
 {%- assign g = include.game -%}
 ,{"@type":["VideoGame","MobileApplication"],"@id":"{{ site.url }}{{ g.url }}#game","name":{{ g.name | jsonify }},"url":"{{ site.url }}{{ g.url }}","description":{{ desc | jsonify }},"image":"{{ site.url }}{{ g.banner }}","screenshot":[{% for s in g.shots %}"{{ site.url }}{{ s.src }}"{% unless forloop.last %},{% endunless %}{% endfor %}],"operatingSystem":"iOS, Android","applicationCategory":"GameApplication","gamePlatform":["iOS","Android"],"genre":["Idle game","Role-playing game"],"author":{"@id":"{{ site.url }}/#org"},"publisher":{"@id":"{{ site.url }}/#org"}
