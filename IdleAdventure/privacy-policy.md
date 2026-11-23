@@ -41,17 +41,17 @@ The Service Provider may disclose User Provided and Automatically Collected Info
 
 You can stop all collection of information by the Application easily by uninstalling it. You may use the standard uninstall processes as may be available as part of your mobile device or via the mobile application marketplace.
 
-If you have registered an account and wish to have your data deleted, please contact the Service Provider at nikogoga87@gmail.com. Deleting your account also removes any Google or Apple account linked to it.
+If you have registered an account and wish to have your data deleted, please contact the Service Provider at support@phmn-solutions.com. Deleting your account also removes any Google or Apple account linked to it.
 
 **Data Retention Policy**
 
-The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. If you'd like them to delete User Provided Data that you have provided via the Application, please contact them at nikogoga87@gmail.com and they will respond in a reasonable time.
+The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. If you'd like them to delete User Provided Data that you have provided via the Application, please contact them at support@phmn-solutions.com and they will respond in a reasonable time.
 
 **Children**
 
 The Service Provider does not use the Application to knowingly solicit data from or market to children under the age of 13.
 
-The Application does not address anyone under the age of 13. The Service Provider does not knowingly collect personally identifiable information from children under 13 years of age. In the case the Service Provider discovers that a child under 13 has provided personal information, the Service Provider will immediately delete this from their servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact the Service Provider (nikogoga87@gmail.com) so that they will be able to take the necessary actions.
+The Application does not address anyone under the age of 13. The Service Provider does not knowingly collect personally identifiable information from children under 13 years of age. In the case the Service Provider discovers that a child under 13 has provided personal information, the Service Provider will immediately delete this from their servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact the Service Provider (support@phmn-solutions.com) so that they will be able to take the necessary actions.
 
 **Security**
 
@@ -61,7 +61,7 @@ The Service Provider is concerned about safeguarding the confidentiality of your
 
 This Privacy Policy may be updated from time to time for any reason. The Service Provider will notify you of any changes to the Privacy Policy by updating this page with the new Privacy Policy. You are advised to consult this Privacy Policy regularly for any changes, as continued use is deemed approval of all changes.
 
-This privacy policy is effective as of 2026-11-07.
+This privacy policy is effective as of 2026-11-23.
 
 **Your Consent**
 
@@ -69,4 +69,4 @@ By using the Application, you are consenting to the processing of your informati
 
 **Contact Us**
 
-If you have any questions regarding privacy while using the Application, or have questions about the practices, please contact the Service Provider via email at nikogoga87@gmail.com.
+If you have any questions regarding privacy while using the Application, or have questions about the practices, please contact the Service Provider via email at support@phmn-solutions.com.

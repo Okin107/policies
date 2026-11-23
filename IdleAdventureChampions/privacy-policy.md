@@ -56,7 +56,7 @@ The Service Provider keeps your data for these periods:
 *   **Device and sign-in history** (device identifier, device information, hashed IP addresses, account events): each device record is deleted automatically **12 months after that device was last used** with your account, and each account event 12 months after it happened.
 *   **Server logs** of individual requests: a short time only, for fixing problems and keeping the service running.
 
-When you delete your account, everything associated with it, including its device and sign-in history, is removed from our servers straight away and replaced on your device by a new, empty profile. Only the purchase records and an anonymous summary (no player ID, name, email or device information) stay; see [Account & Data Deletion](account-deletion.md). If you'd like the Service Provider to delete your data another way, please contact them at nikogoga87@gmail.com and they will respond in a reasonable time.
+When you delete your account, everything associated with it, including its device and sign-in history, is removed from our servers straight away and replaced on your device by a new, empty profile. Only the purchase records and an anonymous summary (no player ID, name, email or device information) stay; see [Account & Data Deletion](account-deletion.md). If you'd like the Service Provider to delete your data another way, please contact them at support@phmn-solutions.com and they will respond in a reasonable time.
 
 **Legal Basis and Your Rights**
 
@@ -66,7 +66,7 @@ If you are in the European Economic Area, the United Kingdom or Switzerland, the
 *   for its legitimate interests in keeping accounts secure and the game fair: the device and sign-in history described above (legitimate interest);
 *   where the law requires it (legal obligation).
 
-You have the right to ask for a copy of your data, to have it corrected, to have it deleted, to receive it in a portable format, to restrict its processing and to object to processing based on legitimate interests. To use any of these rights, contact the Service Provider at nikogoga87@gmail.com with your player ID (copy it from **Settings → Account**). You also have the right to complain to your local data protection authority.
+You have the right to ask for a copy of your data, to have it corrected, to have it deleted, to receive it in a portable format, to restrict its processing and to object to processing based on legitimate interests. To use any of these rights, contact the Service Provider at support@phmn-solutions.com with your player ID (copy it from **Settings → Account**). You also have the right to complain to your local data protection authority.
 
 Our servers and database are hosted in the European Union (Render and MongoDB Atlas, EU regions), and your data is stored there. Both providers are US companies; any access from outside the EU is covered by their data processing terms, which include the European Commission's Standard Contractual Clauses. Signing in with Google or Apple is handled by those companies under their own privacy policies.
 
@@ -74,7 +74,7 @@ Our servers and database are hosted in the European Union (Render and MongoDB At
 
 The Service Provider does not use the Application to knowingly solicit data from or market to children under the age of 13.
 
-The Application does not address anyone under the age of 13. The Service Provider does not knowingly collect personally identifiable information from children under 13 years of age. In the case the Service Provider discovers that a child under 13 has provided personal information, the Service Provider will immediately delete this from their servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact the Service Provider (nikogoga87@gmail.com) so that they will be able to take the necessary actions.
+The Application does not address anyone under the age of 13. The Service Provider does not knowingly collect personally identifiable information from children under 13 years of age. In the case the Service Provider discovers that a child under 13 has provided personal information, the Service Provider will immediately delete this from their servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact the Service Provider (support@phmn-solutions.com) so that they will be able to take the necessary actions.
 
 **Security**
 
@@ -84,7 +84,7 @@ The Service Provider is concerned about safeguarding the confidentiality of your
 
 This Privacy Policy may be updated from time to time for any reason. The Service Provider will notify you of any changes to the Privacy Policy by updating this page with the new Privacy Policy. You are advised to consult this Privacy Policy regularly for any changes, as continued use is deemed approval of all changes.
 
-This privacy policy is effective as of 2026-10-08.
+This privacy policy is effective as of 2026-11-23.
 
 **Your Consent**
 
@@ -92,4 +92,4 @@ By using the Application, you are consenting to the processing of your informati
 
 **Contact Us**
 
-If you have any questions regarding privacy while using the Application, or have questions about the practices, please contact the Service Provider via email at nikogoga87@gmail.com or on the [Discord server](https://discord.gg/G6ewzKfB9r).
+If you have any questions regarding privacy while using the Application, or have questions about the practices, please contact the Service Provider via email at support@phmn-solutions.com or on the [Discord server](https://discord.gg/G6ewzKfB9r).

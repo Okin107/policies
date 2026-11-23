@@ -6,7 +6,7 @@ Open **Settings → Account → Delete account** and confirm. Your account and a
 
 ## Other ways to ask
 
-If you can't open the game any more, send an email to **nikogoga87@gmail.com** with the subject line **"Delete my account"** and include your **player ID** (tap **Copy** next to it in Settings → Account) or your **player name**. If you signed in with Google or Apple, tell us which one.
+If you can't open the game any more, send an email to **support@phmn-solutions.com** with the subject line **"Delete my account"** and include your **player ID** (tap **Copy** next to it in Settings → Account) or your **player name**. If you signed in with Google or Apple, tell us which one.
 
 You can also reach us on the [Discord server](https://discord.gg/G6ewzKfB9r).
 

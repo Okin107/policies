@@ -29,10 +29,10 @@ When a store refunds a purchase, the items or currency it gave may be **removed 
 
 ## A purchase that didn't arrive
 
-If you were charged but didn't get what you bought, contact us before asking for a refund — we can usually fix it. Send your **player ID** (Settings → Account) and the store's **order or receipt number** to **nikogoga87@gmail.com**, or reach us on the [Discord server](https://discord.gg/G6ewzKfB9r).
+If you were charged but didn't get what you bought, contact us before asking for a refund — we can usually fix it. Send your **player ID** (Settings → Account) and the store's **order or receipt number** to **support@phmn-solutions.com**, or reach us on the [Discord server](https://discord.gg/G6ewzKfB9r).
 
 ## Deleting your account
 
 Deleting your account doesn't refund past purchases. See [Account & Data Deletion](account-deletion.md).
 
-This refund policy is effective as of 2026-10-08.
+This refund policy is effective as of 2026-11-23.

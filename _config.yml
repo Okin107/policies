@@ -16,4 +16,4 @@ defaults:
     values: {layout: doc, game: IdleAdventure}
   - scope: {path: "IdleAdventureChampions"}
     values: {layout: doc, game: IdleAdventureChampions}
-email: nikogoga87@gmail.com
+email: support@phmn-solutions.com

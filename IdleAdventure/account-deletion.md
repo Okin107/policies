@@ -2,7 +2,7 @@
 
 ## How to request deletion
 
-Send an email to **nikogoga87@gmail.com** with the subject line **"Delete my account"** and include your **in-game username**.
+Send an email to **support@phmn-solutions.com** with the subject line **"Delete my account"** and include your **in-game username**.
 
 You can also reach us via the [IdleAdventure Discord server](https://discord.gg/cJFj8DBekf) in the support channel.
 
