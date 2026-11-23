@@ -10,13 +10,15 @@ The Application collects the following information when you use it:
 *   **Sign-in information:** If you choose to link a Google or Apple account, the Application receives a unique account identifier from that provider, which lets you sign in to your account with it. Depending on what you allow on the provider's sign-in screen, this may include the email address on that account. If you use Apple's "Hide My Email", only the relay address Apple gives us is received. The Application never sees or stores your Google or Apple password.
 *   **Game progress:** Your gameplay data (including stage progress, currencies, companions, artifacts, achievements, and other in-game state) is stored locally on your device and synced to our servers for cloud save functionality.
 *   **Device information:** The Application collects your device model, operating system and version, screen resolution, and language/locale. This information helps the Service Provider understand what devices players use and debug issues.
-*   **Leaderboard data:** If you register an account, your username, world, and max stage may be displayed publicly on the in-game leaderboard.
+*   **Leaderboard data:** If you register an account, your username, world, and max stage may be displayed publicly on the in-game leaderboards, and your username is shown to other players in guilds and Dungeons.
+*   **Purchase records:** When you buy something, the store's transaction number, the product, the purchase date and its refund status are stored with your account ID, so purchases can be checked, restored and refunded.
+*   **Anti-cheat:** Game progress is checked on our servers. Suspected cheating is recorded as strikes or bans with your account ID.
 
 The Application does not collect your precise location, phone number, or any other personal contact information. An email address is received only if you link a Google or Apple account and allow it on their sign-in screen.
 
 **In-App Purchases**
 
-The Application offers optional in-app purchases (hero skins) processed entirely through Apple's App Store or Google Play Store, depending on your platform. The Service Provider does not collect, store, or have access to your payment information, credit card details, or account credentials. All payment processing is handled by Apple or Google in accordance with their respective privacy policies.
+The Application offers optional in-app purchases processed entirely through Apple's App Store or Google Play Store, depending on your platform. The Service Provider receives a record of each purchase from the store (see Purchase records above), but never your payment information, credit card details, or account credentials. All payment processing is handled by Apple or Google in accordance with their respective privacy policies.
 
 **Third Party Access**
 
@@ -27,7 +29,8 @@ The Application utilises the following third-party services:
 *   [Apple App Store](https://www.apple.com/legal/privacy/) — for app distribution and in-app purchase processing (iOS)
 *   [Google Play Store](https://policies.google.com/privacy) — for app distribution and in-app purchase processing (Android)
 *   [MongoDB Atlas](https://www.mongodb.com/legal/privacy-policy) — for cloud data storage
-*   [Render](https://render.com/privacy) — for hosting the backend API
+*   [Hetzner](https://www.hetzner.com/legal/privacy-policy) — for hosting the backend API (Germany)
+*   [Cloudflare](https://www.cloudflare.com/privacypolicy/) — for network protection in front of the backend API
 *   [Sign in with Apple](https://www.apple.com/legal/privacy/) — optional account sign-in
 *   [Google Sign-In](https://policies.google.com/privacy) — optional account sign-in
 
@@ -41,11 +44,11 @@ The Service Provider may disclose User Provided and Automatically Collected Info
 
 You can stop all collection of information by the Application easily by uninstalling it. You may use the standard uninstall processes as may be available as part of your mobile device or via the mobile application marketplace.
 
-If you have registered an account and wish to have your data deleted, please contact the Service Provider at support@phmn-solutions.com. Deleting your account also removes any Google or Apple account linked to it.
+You can delete your account in the game under Settings → Account → Delete account, or by emailing the Service Provider at support@phmn-solutions.com. Deleting your account also removes any Google or Apple account linked to it. See the [account deletion page](/IdleAdventure/account-deletion) for what is deleted and what is kept.
 
 **Data Retention Policy**
 
-The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. If you'd like them to delete User Provided Data that you have provided via the Application, please contact them at support@phmn-solutions.com and they will respond in a reasonable time.
+The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. When an account is deleted, its purchase records and a short deletion record (account ID, username, dates, highest stage, purchase totals and any cheating strikes or bans) are kept for accounting, refunds and fraud prevention. To delete your data, use Delete account in the game or contact support@phmn-solutions.com, and the Service Provider will respond in a reasonable time.
 
 **Children**
 
