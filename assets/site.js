@@ -73,13 +73,44 @@
   });
 })();
 
-// Store buttons: each tap is counted by its game's server (never in the owner's browser, ?me=1) (one counter per day, store and page; no cookies, nothing about
-// the person), then the store opens as usual
+// The visit so far, in this tab only (sessionStorage: no cookie, gone when the tab closes, never sent anywhere but with a
+// store tap below): where it came from, the reel link it came with, the pages seen and when, the trailer played. A tab
+// quiet for 30 minutes starts a new visit.
+(function () {
+  var KEY = 'phmnVisit', now = Date.now(), v = null;
+  try { v = JSON.parse(sessionStorage.getItem(KEY) || 'null'); } catch (e) {}
+  if (!v || !v.t || now - (v.last || v.t) > 30 * 60 * 1000) {
+    var q = new URLSearchParams(location.search), from = '';
+    try { var r = document.referrer ? new URL(document.referrer) : null; if (r && r.host !== location.host) from = r.host; } catch (e) {}
+    var u = function (k) { return (q.get('utm_' + k) || '').slice(0, 60); };
+    v = { t: now, from: from, utm: { source: u('source'), medium: u('medium'), campaign: u('campaign'), content: u('content') }, steps: [] };
+  }
+  var secs = function () { return Math.round((Date.now() - v.t) / 1000); };
+  var save = function () { v.last = Date.now(); try { sessionStorage.setItem(KEY, JSON.stringify(v)); } catch (e) {} };
+  if (v.steps.length < 12) v.steps.push({ p: location.pathname, s: secs() });
+  save();
+  var played = false;
+  document.addEventListener('play', function (e) {
+    if (played || !e.target || e.target.tagName !== 'VIDEO' || v.steps.length >= 12) return;
+    played = true;
+    v.steps.push({ p: location.pathname, s: secs(), e: 'video' });
+    save();
+  }, true);
+  window.PHMN_VISIT = { get: function () { return { from: v.from, utm: v.utm, steps: v.steps, secs: secs() }; } };
+})();
+
+// Store buttons: each tap goes to its game's server (never in the owner's browser, ?me=1) with the visit above, the page
+// and the browser's language; the server adds the country and the kind of phone, and keeps nothing that names the
+// person (no address, no id). Then the store opens as usual.
 (function () {
   document.addEventListener('click', function (e) {
     var a = e.target.closest && e.target.closest('a[data-store]');
     var box = a && a.closest('[data-taps]');
     if (!box || !navigator.sendBeacon || window.PHMN_ME) return;
-    try { navigator.sendBeacon(box.dataset.taps, JSON.stringify({ store: a.dataset.store, page: location.pathname })); } catch (err) {}
+    var visit = window.PHMN_VISIT ? window.PHMN_VISIT.get() : {};
+    try {
+      navigator.sendBeacon(box.dataset.taps, JSON.stringify({ store: a.dataset.store, page: location.pathname, lang: (navigator.language || '').slice(0, 12),
+        from: visit.from || '', utm: visit.utm || {}, steps: visit.steps || [], secs: visit.secs || 0 }));
+    } catch (err) {}
   });
 })();
